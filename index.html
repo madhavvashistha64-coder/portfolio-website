@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Madhav Portfolio</title>
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #f5f5f5;
+    }
+
+    /* NAVBAR */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background: #222;
+    }
+
+    .logo {
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      margin: 0 15px;
+    }
+
+    /* HERO */
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+    }
+
+    .hero h1 span {
+      color: #ff7f50;
+    }
+
+    .hero-buttons {
+      margin-top: 20px;
+    }
+
+    .primary-btn {
+      padding: 10px 20px;
+      background: #ff7f50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      margin: 10px;
+      cursor: pointer;
+    }
+
+    .primary-btn:hover {
+      background: black;
+    }
+
+    /* SERVICES */
+    .services {
+      text-align: center;
+      padding: 50px;
+    }
+
+    .service-box {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    .service {
+      background: white;
+      padding: 20px;
+      width: 250px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* PROJECTS */
+    .projects {
+      text-align: center;
+      padding: 50px;
+    }
+
+    .project-card {
+      background: white;
+      padding: 20px;
+      width: 300px;
+      margin: 20px auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    /* ABOUT */
+    .about {
+      background: #222;
+      color: white;
+      padding: 50px;
+      text-align: center;
+    }
+
+    /* CONTACT */
+    .contact {
+      text-align: center;
+      padding: 40px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">Madhav</div>
+    <nav class="nav-links">
+      <a href="#">Home</a>
+      <a href="#services">Services</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>I'm <span>Madhav Vashistha</span></h1>
+    <p>Frontend Developer | HTML & CSS</p>
+
+    <div class="hero-buttons">
+      <a href="#projects"><button class="primary-btn">View Projects</button></a>
+      <a href="mailto:madhavvashistha64@gmail.com?subject=Hiring%20for%20Website%20Project">
+        <button class="primary-btn">Hire Me</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <h2>Services I Provide</h2>
+    <div class="service-box">
+      <div class="service">Website Design</div>
+      <div class="service">Landing Page Creation</div>
+      <div class="service">Website Fixing</div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="projects">
+    <h2>My Projects</h2>
+
+    <div class="project-card">
+      <img src="restaurant.png">
+      <h3>Restaurant Website</h3>
+      <a href="https://guileless-quokka-d9f3f1.netlify.app" target="_blank">
+        <button class="primary-btn">Live Demo</button>
+      </a>
+    </div>
+
+    <div class="project-card">
+      <img src="pricing.png">
+      <h3>Pricing Table Website</h3>
+      <a href="https://enchanting-pie-014c10.netlify.app" target="_blank">
+        <button class="primary-btn">Live Demo</button>
+      </a>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="about">
+    <h2>About Me</h2>
+    <p>I am a beginner frontend developer who builds clean and responsive websites.</p>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: madhavvashistha64@gmail.com</p>
+  </section>
+
+</body>
+
+</html>
